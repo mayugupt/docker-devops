@@ -1,13 +1,13 @@
 pipeline {
   environment {
-    registry = "adityaprabhakara/trial"
+    registry = "mayugupt/trial"
     registryCredential = 'dockerhubcred'
   }
   agent any
   stages {
     stage('Building image') {
       steps{
-        git url: 'https://github.com/AdityaSP/docker-devops'  
+        git url: 'https://github.com/mayugupt/docker-devops'  
         script {
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
       }
