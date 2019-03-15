@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: adityaprabhakara/trial:BUILDNUMBER
+        image: mayugupt/trial:BUILDNUMBER
         ports:
         - name: nginxport
           containerPort: 80
